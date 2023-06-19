@@ -1,4 +1,4 @@
-Aluroni é um projeto da tela de um restaurante feito em React, onde conseguimos filtrar os pratos, podemos colocar um buscador, e também conseguimos ordenar por preço.
+Aluroni é um projeto da tela de um restaurante feito no curso de React na alura, onde conseguimos filtrar os pratos, podemos colocar um buscador, e também conseguimos ordenar por preço.
 
 ### Tecnologias utilizadas:
   * React
