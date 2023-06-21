@@ -16,8 +16,8 @@ export default function Ordenador({ordenador, setOrdenador}: Props) {
   return (
     <button
       className={classNames({
-      [styles.ordenador]: true,
-      [styles["ordenador--ativo"]]: ordenador !== '',
+        [styles.ordenador]: true,
+        [styles['ordenador--ativo']]: ordenador !== '',
       })}
       onClick={() => setAberto(!aberto)}
       onBlur={() => setAberto(false)}
@@ -27,7 +27,7 @@ export default function Ordenador({ordenador, setOrdenador}: Props) {
       <div
         className={classNames({
           [styles.ordenador__options]: true,
-          [styles["ordenador__options--ativo"]]: aberto,
+          [styles['ordenador__options--ativo']]: aberto,
         })}
       >
         {opcoes.map(opcao => (

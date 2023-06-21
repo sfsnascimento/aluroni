@@ -29,21 +29,21 @@ export default function Itens(props: Props) {
 
   function ordenar(novaLista: typeof cardapio) {
     switch(ordenador) {
-      case 'porcao':
-        return ordenarPropriedade(novaLista, 'size');
-      case 'qtd_pessoas':
-        return ordenarPropriedade(novaLista, 'serving');
-      case 'preco':
-        return ordenarPropriedade(novaLista, 'price');
-      default:
-        return novaLista;
+    case 'porcao':
+      return ordenarPropriedade(novaLista, 'size');
+    case 'qtd_pessoas':
+      return ordenarPropriedade(novaLista, 'serving');
+    case 'preco':
+      return ordenarPropriedade(novaLista, 'price');
+    default:
+      return novaLista;
     } 
   }
 
   useEffect(() => {
     const novaLista = cardapio.filter(item => testaBusca(item.title) && testaFiltro(item.category.id));
     setLista(ordenar(novaLista));
-  }, [busca, filtro, ordenador])
+  }, [busca, filtro, ordenador]);
 
   return (
     <div className={styles.itens}>
